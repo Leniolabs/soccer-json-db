@@ -144,7 +144,7 @@
       "Goal Method": "Left foot",
       "Final Game Result": "Won",
       "shot": [
-        "asdasda",
+        2222,
         "yyyy"
       ],
       "received": [
@@ -164,7 +164,15 @@
       "Score Away Team - When Messi Scored": 1,
       "Goal Type": null,
       "Goal Method": "Left foot",
-      "Final Game Result": "Won"
+      "Final Game Result": "Won",
+      "shot": [
+        2222,
+        "yyyy"
+      ],
+      "received": [
+        "xxxx",
+        "yyyy"
+      ]
     },
     {
       "id": "2007-05-20-MIN80",
@@ -178,7 +186,15 @@
       "Score Away Team - When Messi Scored": 5,
       "Goal Type": null,
       "Goal Method": "Left foot",
-      "Final Game Result": "Won"
+      "Final Game Result": "Won",
+      "shot": [
+        6666,
+        "yyyy"
+      ],
+      "received": [
+        "xxxx",
+        "yyyy"
+      ]
     },
     {
       "id": "2007-06-17-MIN35",
@@ -192,7 +208,15 @@
       "Score Away Team - When Messi Scored": 2,
       "Goal Type": null,
       "Goal Method": "Left foot",
-      "Final Game Result": "Won"
+      "Final Game Result": "Won",
+      "shot": [
+        6666,
+        "yyyy"
+      ],
+      "received": [
+        "xxxx",
+        "yyyy"
+      ]
     },
     {
       "id": "2007-06-17-MIN51",

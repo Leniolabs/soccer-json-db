@@ -3,62 +3,48 @@ const cors = require("cors");
 const express = require("express");
 const FileSync = require("lowdb/adapters/FileSync");
 const db = lowDb(new FileSync("db.json"));
-const next = require("next");
-const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev });
-const handle = app.getRequestHandler();
+const app = express();
 
-app
-  .prepare()
-  .then(() => {
-    const server = express();
-    server.use(express.json());
+app.use(cors());
+app.use(express.json());
 
-    server.get("*", (req, res) => {
-      return handle(req, res);
-    });
+const PORT = 4000;
 
-    server.get("/messi", (request, response) => {
-      const data = db.get("messi");
-      response.send(data);
-    });
-    //Get goal by id
-    server.get("/messi/getId/:id", (request, response) => {
-      const data = db.get("messi").find({ id: request.params.id });
-      response.send(data);
-    });
+app.get("/messi/all", (request, response) => {
+  const data = db.get("messi");
+  response.send(data);
+});
 
-    //Get lastest 10 without recieved/shot position
-    server.get("/messi/latest-to-fill", (request, response) => {
-      const data = db
-        .get("messi")
-        .filter((item) => {
-          return !item.shot && !item.received;
-        })
-        .take();
-      response.send(data);
-    });
+//Get goal by id
+app.get("/messi/getId/:id", (request, response) => {
+  const data = db.get("messi").find({ id: request.params.id });
+  response.send(data);
+});
 
-    //update or create shot and received
-    server.post("/messi/update/:id", (request, response) => {
-      const {
-        body: { shot, received },
-        params: { id },
-      } = request;
-      db.get("messi")
-        .find({ id })
-        .update("shot", () => shot)
-        .update("received", () => received)
-        .write();
-      return response.send({ success: true });
-    });
+//Get lastest without recieved/shot position
+app.get("/messi/latest-to-fill", (request, response) => {
+  const data = db
+    .get("messi")
+    .filter((item) => {
+      return !item.shot && !item.received;
+    })
+    .take();
+  response.send(data);
+});
+//update or create shot and received
+app.post("/messi/update/:id", (request, response) => {
+  const {
+    body: { shot, received },
+    params: { id },
+  } = request;
+  db.get("messi")
+    .find({ id })
+    .update("shot", () => shot)
+    .update("received", () => received)
+    .write();
+  return response.send({ success: true });
+});
 
-    server.listen(3000, (err) => {
-      if (err) throw err;
-      console.log("> Ready on http://localhost:3000");
-    });
-  })
-  .catch((err) => {
-    console.error(err.stack);
-    process.exit(1);
-  });
+app.listen(PORT, () => {
+  console.log(`Backend is running on http://localhost:${PORT}`);
+});
