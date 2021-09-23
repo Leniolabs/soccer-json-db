@@ -1,15 +1,40 @@
+require("dotenv").config();
+const helmet = require("helmet");
 const lowDb = require("lowdb");
 const cors = require("cors");
 const express = require("express");
 const FileSync = require("lowdb/adapters/FileSync");
-const db = lowDb(new FileSync("db.json"));
+const rateLimit = require("express-rate-limit");
+const jwt = require("express-jwt");
+const db = lowDb(new FileSync("db/db.json"));
 const app = express();
+//Configs
+const limiter = rateLimit({
+  windowMs: 5 * 60 * 1000, // 5 minutes
+  max: 50, // limit each IP to 100 requests per windowMs
+  message: `Too many requests, please try again later.`,
+});
+////
 
+//ENV variables
+const {
+  env: { PORT, SECRET_KEY },
+} = process;
+////
+// const token = jwt2.sign({ payload: "test" }, SECRET_KEY); // this is how generate token with jsonwebtoken to consume API
+// console.log(token);
+
+//Modules
+app.use(limiter);
+app.use(helmet());
 app.use(cors());
 app.use(express.json());
+app.use(jwt({ secret: SECRET_KEY, algorithms: ["HS256"] }));
+////
 
-const PORT = 4000;
+//**** Http Requests *****//
 
+//Get all
 app.get("/messi/all", (request, response) => {
   const data = db.get("messi");
   response.send(data);
@@ -31,6 +56,7 @@ app.get("/messi/latest-to-fill", (request, response) => {
     .take();
   response.send(data);
 });
+
 //update or create shot and received
 app.post("/messi/update/:id", (request, response) => {
   const {
@@ -45,6 +71,7 @@ app.post("/messi/update/:id", (request, response) => {
   return response.send({ success: true });
 });
 
+//Listener
 app.listen(PORT, () => {
-  console.log(`Backend is running on http://localhost:${PORT}`);
+  console.log(`Your port is ${PORT}`);
 });
