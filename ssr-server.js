@@ -42,7 +42,10 @@ app.get("/messi/all", (request, response) => {
 
 //Get goal by id
 app.get("/messi/getId/:id", (request, response) => {
-  const data = db.get("messi").find({ id: request.params.id });
+  const data = db
+    .get("messi")
+    .find({ id: parseInt(request.params.id) })
+    .value();
   response.send(data);
 });
 
@@ -51,10 +54,11 @@ app.get("/messi/latest-to-fill", (request, response) => {
   const data = db
     .get("messi")
     .filter((item) => {
-      return !item.shot && !item.received;
+      return !item.shot || !item.received;
     })
-    .take();
-  response.send(data);
+    .take()
+    .value();
+  response.send(data[0]);
 });
 
 //update or create shot and received
@@ -64,7 +68,7 @@ app.post("/messi/update/:id", (request, response) => {
     params: { id },
   } = request;
   db.get("messi")
-    .find({ id })
+    .find({ id: parseInt(id) })
     .update("shot", () => shot)
     .update("received", () => received)
     .write();
