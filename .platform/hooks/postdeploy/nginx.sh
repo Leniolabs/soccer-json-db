@@ -17,6 +17,9 @@ location / {
         return 301 https://$host$request_uri;
     }
 
+    add_header 'Access-Control-Allow-Origin' '*';
+    add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+
     proxy_pass          http://127.0.0.1:3000;
     proxy_http_version  1.1;
 
