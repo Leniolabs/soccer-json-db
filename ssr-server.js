@@ -18,7 +18,7 @@ const limiter = rateLimit({
 
 //ENV variables
 const {
-  env: { PORT, SECRET_KEY },
+  env: { PORT, SECRET_KEY, LENIO_RESEARCH_URL },
 } = process;
 ////
 // const token = jwt2.sign({ payload: "test" }, SECRET_KEY); // this is how generate token with jsonwebtoken to consume API
@@ -27,7 +27,7 @@ const {
 //Modules
 app.use(limiter);
 app.use(helmet());
-app.use(cors());
+app.use(cors({ origin: LENIO_RESEARCH_URL }));
 app.use(express.json());
 app.use(jwt({ secret: SECRET_KEY, algorithms: ["HS256"] }));
 ////
