@@ -2,16 +2,16 @@ require("dotenv").config();
 const lowDb = require("lowdb");
 const express = require("express");
 const FileSync = require("lowdb/adapters/FileSync");
-const rateLimit = require("express-rate-limit");
+// const rateLimit = require("express-rate-limit");
 const jwt = require("express-jwt");
 const db = lowDb(new FileSync("db/db.json"));
 const app = express();
 //Configs
-const limiter = rateLimit({
-  windowMs: 5 * 60 * 1000, // 5 minutes
-  max: 50, // limit each IP to 100 requests per windowMs
-  message: `Too many requests, please try again later.`,
-});
+// const limiter = rateLimit({
+//   windowMs: 5 * 60 * 1000, // 5 minutes
+//   max: 100, // limit each IP to 100 requests per windowMs
+//   message: `Too many requests, please try again later.`,
+// });
 ////
 
 //ENV variables
@@ -23,7 +23,7 @@ const {
 // console.log(token);
 
 //Modules
-app.use(limiter);
+// app.use(limiter);
 app.use(express.json());
 app.use(jwt({ secret: SECRET_KEY, algorithms: ["HS256"] }));
 app.use(function (req, res, next) {
