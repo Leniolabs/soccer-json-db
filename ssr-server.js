@@ -1,7 +1,5 @@
 require("dotenv").config();
-const helmet = require("helmet");
 const lowDb = require("lowdb");
-const cors = require("cors");
 const express = require("express");
 const FileSync = require("lowdb/adapters/FileSync");
 const rateLimit = require("express-rate-limit");
@@ -18,7 +16,7 @@ const limiter = rateLimit({
 
 //ENV variables
 const {
-  env: { PORT, SECRET_KEY, LENIO_RESEARCH_URL },
+  env: { PORT, SECRET_KEY },
 } = process;
 ////
 // const token = jwt2.sign({ payload: "test" }, SECRET_KEY); // this is how generate token with jsonwebtoken to consume API
@@ -26,8 +24,6 @@ const {
 
 //Modules
 app.use(limiter);
-app.use(helmet());
-app.use(cors({ origin: LENIO_RESEARCH_URL }));
 app.use(express.json());
 app.use(jwt({ secret: SECRET_KEY, algorithms: ["HS256"] }));
 ////
