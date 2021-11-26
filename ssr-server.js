@@ -26,6 +26,12 @@ const {
 app.use(limiter);
 app.use(express.json());
 app.use(jwt({ secret: SECRET_KEY, algorithms: ["HS256"] }));
+app.use(function (req, res, next) {
+  if (req.method === "OPTIONS") {
+    res.status(200);
+  }
+  next();
+});
 ////
 
 //**** Http Requests *****//
