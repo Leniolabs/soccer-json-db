@@ -19,6 +19,7 @@ location / {
 
     add_header 'Access-Control-Allow-Origin' '*' always;
     add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always;
+    add_header 'Access-Control-Allow-Headers' 'Origin, X-Requested-With, Content-Type, Accept, Authorization' always;
 
     proxy_pass          http://127.0.0.1:3000;
     proxy_http_version  1.1;
