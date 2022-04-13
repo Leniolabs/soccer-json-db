@@ -5,8 +5,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+.yarn/
 
-db/*.json
+src/db/*.json
 .vscode
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
