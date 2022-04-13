@@ -10,7 +10,15 @@
       "Minute": 91,
       "Type of goal": "Left-footed shot",
       "Assist": "Ronaldinho Gaúcho",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        425.73529052734375,
+        50.61121368408203
+      ],
+      "received": [
+        463.8235168457031,
+        253.40533447265628
+      ]
     },
     {
       "id": 2,
@@ -22,7 +30,15 @@
       "Minute": "34",
       "Type of goal": "Left-footed shot",
       "Assist": "",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        372.20587158203125,
+        81.49356842041016
+      ],
+      "received": [
+        480.2941284179688,
+        237.96414184570312
+      ]
     },
     {
       "id": 3,
@@ -34,7 +50,15 @@
       "Minute": "Samuel Eto",
       "Type of goal": "Left-footed shot",
       "Assist": "Samuel Eto'o",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        295,
+        72.2288589477539
+      ],
+      "received": [
+        239.41177368164062,
+        240.02297973632812
+      ]
     },
     {
       "id": 4,
@@ -46,7 +70,15 @@
       "Minute": "50",
       "Type of goal": "Left-footed shot",
       "Assist": "Mark van Bommel",
-      "PartialStatus": "Tying"
+      "PartialStatus": "Tying",
+      "shot": [
+        333.0882263183594,
+        70.17003631591797
+      ],
+      "received": [
+        321.76470947265625,
+        238.9935607910156
+      ]
     },
     {
       "id": 5,
@@ -58,7 +90,15 @@
       "Minute": "82",
       "Type of goal": "Left-footed shot",
       "Assist": "Ronaldinho Gaúcho",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        212.64706420898438,
+        126.78768920898438
+      ],
+      "received": [
+        151.91175842285156,
+        375.90533447265625
+      ]
     },
     {
       "id": 6,
@@ -70,7 +110,15 @@
       "Minute": "75",
       "Type of goal": "Right-footed shot",
       "Assist": "Sylvinho",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        444.26470947265625,
+        114.43473815917969
+      ],
+      "received": [
+        405.1470642089844,
+        307.9641418457031
+      ]
     },
     {
       "id": 7,
@@ -82,7 +130,15 @@
       "Minute": "83",
       "Type of goal": "Left-footed shot",
       "Assist": "Ronaldinho Gaúcho",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        343.3823547363281,
+        117.52297973632812
+      ],
+      "received": [
+        327.941162109375,
+        290.4641418457031
+      ]
     },
     {
       "id": 8,
@@ -94,7 +150,15 @@
       "Minute": "42",
       "Type of goal": "Header",
       "Assist": "Ludovic Giuly",
-      "PartialStatus": "Tying"
+      "PartialStatus": "Tying",
+      "shot": [
+        335.1470642089844,
+        104.14062500000001
+      ],
+      "received": [
+        348.5294189453125,
+        151.49356079101562
+      ]
     },
     {
       "id": 9,
@@ -106,7 +170,15 @@
       "Minute": "84",
       "Type of goal": "Left-footed shot",
       "Assist": "",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        245.58822631835938,
+        86.640625
+      ],
+      "received": [
+        222.94117736816406,
+        180.31709289550778
+      ]
     },
     {
       "id": 10,
@@ -118,7 +190,15 @@
       "Minute": "59",
       "Type of goal": "Left-footed shot",
       "Assist": "Andrés Iniesta",
-      "PartialStatus": "Tying"
+      "PartialStatus": "Tying",
+      "shot": [
+        230.14706420898438,
+        100.02297973632812
+      ],
+      "received": [
+        288.8235168457031,
+        249.28768920898438
+      ]
     },
     {
       "id": 11,
@@ -130,7 +210,15 @@
       "Minute": "Samuel Eto",
       "Type of goal": "Left-footed shot",
       "Assist": "Samuel Eto'o",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        372.20587158203125,
+        140.1700439453125
+      ],
+      "received": [
+        382.49999999999994,
+        279.140625
+      ]
     },
     {
       "id": 12,
@@ -142,7 +230,15 @@
       "Minute": "89",
       "Type of goal": "Left-footed shot",
       "Assist": "Deco",
-      "PartialStatus": "Losing"
+      "PartialStatus": "Losing",
+      "shot": [
+        524.558837890625,
+        137.08180236816406
+      ],
+      "received": [
+        557.5,
+        272.9641418457031
+      ]
     },
     {
       "id": 13,
@@ -154,7 +250,15 @@
       "Minute": "80",
       "Type of goal": "Right-footed shot",
       "Assist": "Xavi",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        402.05883789062506,
+        93.84650421142578
+      ],
+      "received": [
+        479.2647094726562,
+        317.2288513183594
+      ]
     },
     {
       "id": 14,
@@ -166,7 +270,15 @@
       "Minute": "Samuel Eto",
       "Type of goal": "Left-footed shot",
       "Assist": "Samuel Eto'o",
-      "PartialStatus": "Losing"
+      "PartialStatus": "Losing",
+      "shot": [
+        308.3823547363281,
+        177.22886657714844
+      ],
+      "received": [
+        212.64706420898438,
+        305.90533447265625
+      ]
     },
     {
       "id": 15,
@@ -178,7 +290,15 @@
       "Minute": "28",
       "Type of goal": "Left-footed shot",
       "Assist": "",
-      "PartialStatus": "Losing"
+      "PartialStatus": "Losing",
+      "shot": [
+        141.61764526367188,
+        170.02297973632812
+      ],
+      "received": [
+        155,
+        320.3171081542969
+      ]
     },
     {
       "id": 16,
@@ -190,7 +310,15 @@
       "Minute": 91,
       "Type of goal": "Left-footed shot",
       "Assist": "Ronaldinho Gaúcho",
-      "PartialStatus": "Losing"
+      "PartialStatus": "Losing",
+      "shot": [
+        152.94117736816406,
+        195.7582702636719
+      ],
+      "received": [
+        110.73529052734375,
+        279.140625
+      ]
     },
     {
       "id": 17,
@@ -202,7 +330,15 @@
       "Minute": "86",
       "Type of goal": "Left-footed shot",
       "Assist": "",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        298.0882263183594,
+        126.78768920898438
+      ],
+      "received": [
+        271.3235168457031,
+        276.0523986816406
+      ]
     },
     {
       "id": 18,
@@ -214,7 +350,15 @@
       "Minute": "45",
       "Type of goal": "Left-footed shot",
       "Assist": "Ronaldinho Gaúcho",
-      "PartialStatus": "Tying"
+      "PartialStatus": "Tying",
+      "shot": [
+        257.941162109375,
+        140.1700439453125
+      ],
+      "received": [
+        145.73529052734375,
+        234.87591552734378
+      ]
     },
     {
       "id": 19,
@@ -226,7 +370,15 @@
       "Minute": "29",
       "Type of goal": "Solo run",
       "Assist": "Xavi",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        483.3823547363281,
+        133.99356079101562
+      ],
+      "received": [
+        516.3235473632812,
+        252.37591552734375
+      ]
     },
     {
       "id": 20,
@@ -238,7 +390,15 @@
       "Minute": "45",
       "Type of goal": "Left-footed shot",
       "Assist": "Deco",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        181.76470947265625,
+        128.8465118408203
+      ],
+      "received": [
+        193.08824157714844,
+        217.37591552734375
+      ]
     },
     {
       "id": 21,
@@ -250,7 +410,15 @@
       "Minute": "Samuel Eto",
       "Type of goal": "Left-footed shot",
       "Assist": "Samuel Eto'o",
-      "PartialStatus": "Tying"
+      "PartialStatus": "Tying",
+      "shot": [
+        178.6764678955078,
+        100.02297973632812
+      ],
+      "received": [
+        89.11764526367188,
+        219.43473815917966
+      ]
     },
     {
       "id": 22,
@@ -262,7 +430,15 @@
       "Minute": "80",
       "Type of goal": "Left-footed shot",
       "Assist": "Giovanni van Bronckhorst",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        228.08824157714844,
+        74.28768157958984
+      ],
+      "received": [
+        115.88235473632812,
+        119.58180236816406
+      ]
     },
     {
       "id": 23,
@@ -274,7 +450,15 @@
       "Minute": "43",
       "Type of goal": "",
       "Assist": "Gianluca Zambrotta",
-      "PartialStatus": "Losing"
+      "PartialStatus": "Losing",
+      "shot": [
+        429.8529357910156,
+        84.58180236816406
+      ],
+      "received": [
+        561.61767578125,
+        148.40533447265625
+      ]
     },
     {
       "id": 24,
@@ -286,7 +470,15 @@
       "Minute": "57",
       "Type of goal": "Right-footed shot",
       "Assist": "Deco",
-      "PartialStatus": "Tying"
+      "PartialStatus": "Tying",
+      "shot": [
+        389.70587158203125,
+        117.52297973632812
+      ],
+      "received": [
+        419.55883789062494,
+        250.31710815429688
+      ]
     },
     {
       "id": 25,
@@ -298,7 +490,15 @@
       "Minute": "34",
       "Type of goal": "Left-footed shot",
       "Assist": "Deco",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        456.6176452636719,
+        73.25827026367188
+      ],
+      "received": [
+        581.1764526367188,
+        175.17004394531247
+      ]
     },
     {
       "id": 26,
@@ -310,7 +510,15 @@
       "Minute": "51",
       "Type of goal": "Left-footed shot",
       "Assist": "Deco",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        262.058837890625,
+        61.934745788574226
+      ],
+      "received": [
+        171.4705810546875,
+        179.28768920898438
+      ]
     },
     {
       "id": 27,
@@ -322,7 +530,15 @@
       "Minute": "82",
       "Type of goal": "Left-footed shot",
       "Assist": "Andrés Iniesta",
-      "PartialStatus": "Winning"
+      "PartialStatus": "Winning",
+      "shot": [
+        324.8529357910156,
+        6.346508026123047
+      ],
+      "received": [
+        255.88235473632812,
+        315.1700439453125
+      ]
     },
     {
       "id": 28,
@@ -334,7 +550,15 @@
       "Minute": "72",
       "Type of goal": "Left-footed shot",
       "Assist": "Thierry Henry",
-      "PartialStatus": "Tying"
+      "PartialStatus": "Tying",
+      "shot": [
+        406.1764831542969,
+        145.3170928955078
+      ],
+      "received": [
+        347.5,
+        314.140625
+      ]
     },
     {
       "id": 29,
